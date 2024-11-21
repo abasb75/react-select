@@ -1,0 +1,90 @@
+.abasb75-react-select-container{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.abasb75-react-select-container * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.abasb75-react-select-value-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.abasb75-react-select-arrow {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abasb75-react-select-arrow svg{
+    fill: #a0a0a0;
+}
+
+.abasb75-react-select-value{
+    width: 100%;
+    height: 100%;
+    padding: 4px 40px 4px 8px;
+}
+
+.abasb75-react-select-value-label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px  solid  #e0e0e0;
+}
+
+.abasb75-react-select-value-label.placeholder {
+    color: #a0a0a0;
+}
+
+.abasb75-react-select-value-label.value {
+    color: #000045;
+}
+
+
+.abasb75-react-select-options{
+    position: absolute;
+    width: 100%;
+    max-height: 320px;
+    padding: 5px;
+    z-index: 100;
+    border: 1px  solid #f1f1f1;
+    box-shadow: 6px 2px 3px #00004523;
+}
+
+.abasb75-react-select-option{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 5px 8px;
+    overflow: hidden;
+    align-items: center;
+    cursor: pointer;
+    background: #ffffff;
+    transition: .3s all;
+}
+
+.abasb75-react-select-option.active{
+    background: #f7f7f7;
+}
+
+.abasb75-react-select-option:hover{
+    background: #f1f1f1;
+}

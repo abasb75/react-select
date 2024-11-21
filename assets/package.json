@@ -1,0 +1,27 @@
+{
+    "name": "@abasb75/react-select",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "main": "index.js",
+    "types": "types.ts",
+    "dependencies": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    },
+    "peerDependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "author": {
+        "email": "abasbagheria@gmail.com",
+        "name": "Abbas Bagheri",
+        "url": "https://abasbagheri.ir/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abasb75/react-select"
+    },
+    "license": "ISC"
+}
+  

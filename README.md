@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="assets/screen.png" alt="@abasb75/reac-select react-select" title="@abasb75/react-select">
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+add to reactjs :
 
-## Expanding the ESLint configuration
+```sh
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+npm install @abasb75/react-select --save
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+usage example :
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```javascript
+
+
+import Select from "@abasb75/react-select";
+
+function App() {
+
+  return (<div id="app">
+    <div>
+      <h1>@abasb75/react-select</h1>
+      <Select 
+        options={[
+          {label:'Paterol',value:'0'},
+          {label:'Toyota',value:'1'},
+          {label:'Benz',value:'2'}
+        ]} 
+        defaultValue={'1'}
+      />
+    </div>
+  </div>)
+}
+
+export default App;
+
 ```
+
+
+props :
+
+<!-- props-table-start -->
+## Properties
+    
+
+| Property | PropType | Required | Default | Description |
+|----------|----------|----------|---------|-------------|
+| options | `ISelectOption[]` | `1` |  |  |
+| placeholder | `string` | `0` | `Select ...` |  |
+| defaultValue | `string` | `0` |  | |
+| onChange | `(option?:ISelectOption)=>void` | `0` | `''` | |
+| className | `string` | `0` | `''` | select container classes |
+| optionClassName | `string` | `0` | `''` | select option items classes |
+| activeOptionClassName | `string` | `0` | `''` | select active option item classes |
+| optionsClassName | `string` | `0` | `''` | select options container classes |
+| arrowClassName | `string` | `0` | `''` | select arrow container classes |
+| arrowSvgClassName | `string` | `0` | `''` | select svg arrow classes |
+| valueClassName | `string` | `0` | `''` | select container classes |
+| style | `React.CSSProperties` | `0` | `''` | select container inline styles |
+| optionStyle | `React.CSSProperties` | `0` | `''` | select option items inline styles |
+| activeOptionStyle | `React.CSSProperties` | `0` | `''` | select active option item inline styles |
+| optionsStyle | `React.CSSProperties` | `0` | `''` | select options container inline styles |
+| arrowStyle | `React.CSSProperties` | `0` | `''` | select arrow container inline styles |
+| arrowSvgStyle | `React.CSSProperties` | `0` | `''` | select svg arrow inline styles |
+| valueStyle | `React.CSSProperties` | `0` | `''` | select container inline styles |
+| OptionComponent | `React.FC` | `0` | `''` | Alternative component for default OptionItem component |
+| ValueComponent | `React.FC` | `0` | `''` | Alternative component for default selected Value component |
+
+
+<!-- props-table-end -->
